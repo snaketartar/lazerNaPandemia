@@ -117,5 +117,6 @@ export default {
     }
     .selected {
       background-color: #FFB74D !important;
+      transition: background-color 1s;
     }
 </style>
