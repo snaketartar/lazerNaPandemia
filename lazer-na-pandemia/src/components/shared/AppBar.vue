@@ -36,7 +36,7 @@
             <v-list-item-title>Jogos</v-list-item-title>
           </v-list-item>
         </router-link>  
-
+        </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
   </div>
