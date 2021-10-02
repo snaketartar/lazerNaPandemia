@@ -27,7 +27,16 @@
             <v-list-item-title>Anime</v-list-item-title>
           </v-list-item>
         </router-link>  
-        </v-list-item-group>
+
+        <router-link to="/Jogos">
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Jogos</v-list-item-title>
+          </v-list-item>
+        </router-link>  
+
       </v-list>
     </v-navigation-drawer>
   </div>
