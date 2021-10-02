@@ -2,7 +2,7 @@
   <div>
     <v-app-bar color="deep-purple accent-4" app dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-      <v-toolbar-title>Page title</v-toolbar-title>
+      <v-toolbar-title>Jogos e Animes</v-toolbar-title>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list nav dense>
@@ -15,6 +15,26 @@
               <v-icon>mdi-home</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Home</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-gamepad-variant-outline</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Jogos</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-movie-edit-outline</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Animes</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-account-group</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Sobre</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -31,4 +51,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+* {
+  font-family: above;
+}
+</style>
