@@ -36,12 +36,14 @@
               <v-list-item-title>Animes</v-list-item-title>
             </v-list-item>
           </router-link>
-          <!-- <v-list-item>
+          <router-link to="/sobre">
+          <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-account-group</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Sobre</v-list-item-title>
-          </v-list-item> -->
+          </v-list-item>
+          </router-link>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
