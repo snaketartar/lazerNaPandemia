@@ -1,11 +1,12 @@
 <template>
   <v-container>
-    <h1 style="text-align: center">AG Pandemic</h1>
+    <h1>AG Pandemic</h1>
 
-    <div class="mt-5 home-img">
+    <div>
       <v-img src="../assets/logo.png" alt="Animes e Jogos" />
     </div>
     <p>
+      <br />
       Como seres sociais, convívio com outras pessoas está na nossa essência e,
       até pouco tempo, este convívio vinha acompanhado de muita aglomeração.
       <br />
@@ -15,14 +16,12 @@
       <br />
       <br />
     </p>
-    <p style="text-align: center">
+    <p>
       E foi pensando nisso que criamos o<br />
       <strong> Games and Anime Pandemic's</strong>
     </p>
 
-    <h3 style="text-align: center">
-      Bora dar uma volta em torno do mundo Anime? 😃
-    </h3>
+    <h3>Bora dar uma volta em torno do mundo Anime? 😃</h3>
   </v-container>
 </template>
 
@@ -37,5 +36,6 @@ h1,
 p,
 h3 {
   font-family: Bradley Hand, cursive;
+  text-align: center;
 }
 </style>
