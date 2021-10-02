@@ -17,7 +17,6 @@
             </v-list-item-icon>
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item>
-<<<<<<< HEAD
 
           <v-list-item>
             <v-list-item-icon>
@@ -38,27 +37,6 @@
             </v-list-item-icon>
             <v-list-item-title>Sobre</v-list-item-title>
           </v-list-item>
-=======
-        </router-link>  
-
-        <router-link to="/anime">
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Anime</v-list-item-title>
-          </v-list-item>
-        </router-link>  
-
-        <router-link to="/Jogos">
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Jogos</v-list-item-title>
-          </v-list-item>
-        </router-link>  
->>>>>>> b936915edf5c6d7d41277d491e3d4ca117705b04
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
