@@ -11,7 +11,7 @@
       até pouco tempo, este convívio vinha acompanhado de muita aglomeração.
       <br />
       <br />
-      Mas, com a pandemia todos precisam se adapitar, e o lazer precisa de ações
+      Mas, com a pandemia todos precisam se adaptar, e o lazer precisa de ações
       tão divertidas quanto, mas que não sejam em um ambiente de aglomeração.
       <br />
       <br />
