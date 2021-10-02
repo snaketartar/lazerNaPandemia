@@ -63,5 +63,6 @@ export default {
 }
 .app-bar a {
   text-decoration: none;
+  color: black !important;
 }
 </style>
