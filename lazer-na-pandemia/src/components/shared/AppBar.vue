@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app-bar">
     <v-app-bar color="deep-purple accent-4" app dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title>Jogos e Animes</v-toolbar-title>
@@ -16,26 +16,38 @@
             </v-list-item-icon>
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item>
+<<<<<<< HEAD
+=======
+        </router-link>  
+>>>>>>> 70b73a3852fc78e811061009d06433100e59e2c2
 
+        <router-link to="/jogos">
           <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-gamepad-variant-outline</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Jogos</v-list-item-title>
           </v-list-item>
+        </router-link>  
 
+        <router-link to="/anime">
           <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-movie-edit-outline</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Animes</v-list-item-title>
           </v-list-item>
-          <v-list-item>
+        </router-link>  
+          <!-- <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-account-group</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Sobre</v-list-item-title>
+<<<<<<< HEAD
           </v-list-item>
+=======
+          </v-list-item> -->
+>>>>>>> 70b73a3852fc78e811061009d06433100e59e2c2
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -54,5 +66,8 @@ export default {
 <style scoped>
 * {
   font-family: above;
+}
+.app-bar a {
+  text-decoration: none;
 }
 </style>

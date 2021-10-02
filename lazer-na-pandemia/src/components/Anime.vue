@@ -11,7 +11,7 @@
         </v-col>
     </v-row>
     <v-row row wrap>
-      <v-col v-for="anime in animeList" :key="anime.id" width="400px">
+      <v-col v-for="anime in animeList" :key="anime.id" width="400px" max-width='450px' class="pa-5">
         <v-card class="pa-5" :class="anime.status.length < 12 ? 'ongoing-anime' : 'completed-anime'" max-width="400px">
           <v-img :src="anime.photo" class="mx-auto" max-width="350px"/>
           <h2 class="title text-center my-2">{{ anime.name }}</h2>
@@ -96,5 +96,8 @@ export default {
     }
     .filter {
         border: 1px solid gray;
+    }
+    .col {
+        flex-grow: 0;
     }
 </style>
