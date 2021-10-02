@@ -1,6 +1,13 @@
 <template>
+<<<<<<< HEAD
   <v-container>
     <h1 style="text-align: center">AG Pandemic</h1>
+=======
+  <h1>home!!!!</h1>
+</template>
+
+<script>
+>>>>>>> b936915edf5c6d7d41277d491e3d4ca117705b04
 
     <div class="mt-5 home-img">
       <v-img src="../assets/logo.png" alt="Animes e Jogos" />
