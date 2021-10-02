@@ -2,7 +2,7 @@
   <v-container class="mt-5">
     <v-row>
         <v-col>
-            <p>Filtros:</p>
+            <p class="caption gray--text mb-0">Filtros:</p>
             <select class="filter pa-2" name="select" v-model="selectedOption" @change="animeFilter">
                 <option value="relevancia" selected>Relevância</option>
                 <option value="name_a_z">Por nome (A-Z)</option>
@@ -25,7 +25,7 @@
             <p class="subtitle-2">{{ anime.genre }}</p>
           </v-col>
           <v-col class="ma-auto">
-            <v-chip dark :class="anime.status.length < 12 ? 'ongoing-anime-chip' : 'completed-anime-chip'" class="margin-auto text-center">{{ anime.status }}</v-chip>
+            <v-chip dark :class="anime.status.length < 12 ? 'ongoing-anime-chip' : 'completed-anime-chip'" class="margin-auto text-center">{{ firstLetterUpperCase(anime.status) }}</v-chip>
           </v-col>
         </v-card>
       </v-col>
@@ -68,7 +68,10 @@ export default {
                   this.animeList.sort((a, b) => a.name < b.name ? 1 : -1); 
                   break;         
           }
-      }
+      },
+      firstLetterUpperCase(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+      },
   }
 };
 </script>
@@ -92,6 +95,6 @@ export default {
         margin: 0 auto;
     }
     .filter {
-        border: 1px solid blue;
+        border: 1px solid gray;
     }
 </style>
