@@ -1,6 +1,6 @@
 <template>
   <div class="app-bar">
-    <v-app-bar color="deep-purple accent-4" app dark>
+    <v-app-bar color="orange lighten-1" app dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title>Jogos e Animes</v-toolbar-title>
     </v-app-bar>
@@ -8,7 +8,7 @@
       <v-list nav dense>
         <v-list-item-group
           v-model="group"
-          active-class="deep-purple--text text--accent-4"
+          active-class="orange lighten-4 red-text"
         >
           <router-link to="/">
             <v-list-item>
