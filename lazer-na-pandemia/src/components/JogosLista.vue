@@ -9,14 +9,14 @@
           </v-card-subtitle>
           <a :href="gerarLink(jogo.id)" target="blank" ><v-img class="mb-3" :src="jogo.photo" :alt="jogo.photo "/></a>
           <v-text class="pl-3">
-              Disponível em:
+              Disponível para:
               <v-list class="pl-6" v-for="plataforma of jogo.platform" :key="plataforma">
                   - {{ plataforma }}
               </v-list>
           </v-text>
       </v-card>
   </v-container>
-</template>
+</template> 
 
 <script>
 export default {
@@ -67,6 +67,6 @@ export default {
     hyphens: auto;
 }
 .v-card a {
-  text-decoration: none;
+  text-decoration: none;    
 }
 </style>

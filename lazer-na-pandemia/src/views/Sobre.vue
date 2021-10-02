@@ -1,6 +1,6 @@
 <template>
     <section>
-    <div class ="container">
+    <v-row class ="container">
         <h1>Sobre o projeto:</h1>
         <p>O projeto foi desenvolvido em outubro de 2021 durante o Hackathon Decola Mercury, 9º Hackathon realizado pela empresa Iteris.
         <br>
@@ -11,11 +11,12 @@
             max-height="250"
             max-width="250"
         ></v-img>
-         <p> Projeto desenvolvido pela equipe 13 que contou com os integrantes:</p>
+         
 
 
-    </div>
-    <div class="devs">
+    </v-row>
+    <v-row class="devs">
+        <p> Projeto desenvolvido pela equipe 13 que contou com os integrantes:</p>
         <a src="https://github.com/snaketartar">
             <div class="participantes">
                 <h2>Ivan Megre Souto</h2>
@@ -53,16 +54,16 @@
             </div>
         </a>
       
-    </div>
+    </v-row>
 
-    <div class="referencias">
+    <v-row class="referencias">
         <h1>Referências</h1>
         <h2>APIS utilizadas:</h2>
         <ul>
-            <li>https://it3zxc-default-rtdb.firebaseio.com/lazer/jogos.json</li>
-            <li>https://it3zxc-default-rtdb.firebaseio.com/lazer/animes.json</li>
+            <li> <a href="https://it3zxc-default-rtdb.firebaseio.com/lazer/jogos.json" target="_blank"> Jogos</a></li>
+            <li> <a href="https://it3zxc-default-rtdb.firebaseio.com/lazer/animes.json" target="_blank"> Animes</a></li>
          </ul>
-    </div>
+    </v-row>
 
 </section>
 </template>
@@ -73,7 +74,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     section{
         width: 80vw;
         margin: 0 auto;
@@ -89,7 +90,6 @@ export default {
         align-items:center;
         justify-content:center;
         margin-top:4em;
-        margin-bottom: 50px;
         height:70vh;
         }
 
@@ -172,6 +172,11 @@ export default {
     .referencias li{
         width:80%;
         margin:85px auto;    }
+    .referencias li a{
+        color:#8f591c ;
+        text-decoration: none;
+        font-weight: 500;
+        }
 
 
 </style>
