@@ -73,7 +73,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     section{
         width: 80vw;
         margin: 0 auto;
