@@ -11,8 +11,8 @@
         </v-col>
     </v-row>
     <v-row row wrap>
-      <v-col v-for="anime in animeList" :key="anime.id" width="400px" max-width='450px' class="pa-5">
-        <v-card class="pa-5" :class="anime.status.length < 12 ? 'ongoing-anime' : 'completed-anime'" max-width="400px">
+      <v-col v-for="anime in animeList" :key="anime.id" width="400px" max-width='450px' class="pa-5" @click="selectAnime(anime.id)">
+        <v-card class="pa-5" :class="[anime.status.length < 12 ? 'ongoing-anime' : 'completed-anime', hasId(anime.id) ? 'selected' : '']" max-width="400px">
           <v-img :src="anime.photo" class="mx-auto" max-width="350px"/>
           <h2 class="title text-center my-2">{{ anime.name }}</h2>
           <v-col class="py-0">
@@ -38,7 +38,8 @@ export default {
   data() {
     return {
       animeList: [],
-      selectedOption: 'relevancia'
+      selectedOption: 'relevancia',
+      selectedAnime: [],
     };
   },
   created() {
@@ -72,6 +73,20 @@ export default {
       firstLetterUpperCase(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
       },
+      selectAnime(id) {
+        if(this.selectedAnime.includes(id)) {
+          this.selectedAnime.splice(this.selectedAnime.indexOf(id), 1)
+        } else {
+          this.selectedAnime.push(id);
+        }
+      },
+      hasId(id) {
+        if(this.selectedAnime.includes(id)) {
+          return true;
+        } else {
+          return false;
+        }
+      }
   }
 };
 </script>
@@ -99,5 +114,9 @@ export default {
     }
     .col {
         flex-grow: 0;
+    }
+    .selected {
+      background-color: #FFB74D !important;
+      transition: background-color 1s;
     }
 </style>
