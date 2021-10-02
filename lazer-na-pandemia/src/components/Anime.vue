@@ -12,7 +12,7 @@
     </v-row>
     <v-row row wrap>
       <v-col v-for="anime in animeList" :key="anime.id" width="400px" max-width='450px' class="pa-5" @click="selectAnime(anime.id)">
-        <v-card class="pa-5" :class="[anime.status.length < 12 ? 'ongoing-anime' : 'completed-anime', hasId(anime.id) ? 'selected' : '']" max-width="400px">
+        <v-card class="pa-5" :class="[anime.status.length < 12 ? 'ongoing-anime' : 'completed-anime', hasId(anime.id) ? 'selected' : 'diselected']" max-width="400px">
           <v-img :src="anime.photo" class="mx-auto" max-width="350px"/>
           <h2 class="title text-center my-2">{{ anime.name }}</h2>
           <v-col class="py-0">
@@ -117,6 +117,10 @@ export default {
     }
     .selected {
       background-color: #FFB74D !important;
+      transition: background-color 1s;
+    }
+    .diselected {
+      background-color: white !important;
       transition: background-color 1s;
     }
 </style>
