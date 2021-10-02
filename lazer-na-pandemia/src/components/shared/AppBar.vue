@@ -10,44 +10,38 @@
           v-model="group"
           active-class="deep-purple--text text--accent-4"
         >
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item>
-<<<<<<< HEAD
-=======
-        </router-link>  
->>>>>>> 70b73a3852fc78e811061009d06433100e59e2c2
+          <router-link to="/">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-home</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Home</v-list-item-title>
+            </v-list-item>
+          </router-link>
 
-        <router-link to="/jogos">
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-gamepad-variant-outline</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Jogos</v-list-item-title>
-          </v-list-item>
-        </router-link>  
+          <router-link to="/jogos">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-gamepad-variant-outline</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Jogos</v-list-item-title>
+            </v-list-item>
+          </router-link>
 
-        <router-link to="/anime">
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-movie-edit-outline</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Animes</v-list-item-title>
-          </v-list-item>
-        </router-link>  
+          <router-link to="/anime">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-movie-edit-outline</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Animes</v-list-item-title>
+            </v-list-item>
+          </router-link>
           <!-- <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-account-group</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Sobre</v-list-item-title>
-<<<<<<< HEAD
-          </v-list-item>
-=======
           </v-list-item> -->
->>>>>>> 70b73a3852fc78e811061009d06433100e59e2c2
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
