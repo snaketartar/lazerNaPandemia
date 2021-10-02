@@ -1,5 +1,15 @@
 <template>
   <v-container class="mt-5">
+    <v-row>
+        <v-col>
+            <p>Filtros:</p>
+            <select class="filter pa-2" name="select" v-model="selectedOption" @change="animeFilter">
+                <option value="relevancia" selected>Relevância</option>
+                <option value="name_a_z">Por nome (A-Z)</option>
+                <option value="name_z_a">Por nome (Z-A)</option>
+            </select>
+        </v-col>
+    </v-row>
     <v-row row wrap>
       <v-col v-for="anime in animeList" :key="anime.id" width="400px">
         <v-card class="pa-5" :class="anime.status.length < 12 ? 'ongoing-anime' : 'completed-anime'" max-width="400px">
@@ -28,6 +38,7 @@ export default {
   data() {
     return {
       animeList: [],
+      selectedOption: 'relevancia'
     };
   },
   created() {
@@ -37,6 +48,28 @@ export default {
         this.animeList = json;
       });
   },
+  methods: {
+      fetchAnimes() {
+        fetch("https://it3zxc-default-rtdb.firebaseio.com/lazer/animes.json")
+        .then((response) => response.json())
+        .then((json) => {
+            this.animeList = json;
+        });
+      },
+      animeFilter(option) {
+          switch (option.target.value) {
+              case 'relevancia':
+                  this.fetchAnimes();
+                  break;
+              case 'name_a_z':
+                  this.animeList.sort((a, b) => a.name < b.name ? -1 : 1); 
+                  break;
+              case 'name_z_a':
+                  this.animeList.sort((a, b) => a.name < b.name ? 1 : -1); 
+                  break;         
+          }
+      }
+  }
 };
 </script>
 
@@ -57,5 +90,8 @@ export default {
         display: block;
         width: auto;
         margin: 0 auto;
+    }
+    .filter {
+        border: 1px solid blue;
     }
 </style>
